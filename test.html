@@ -1,27 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="test.css">
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" type="text/css" href="test.css" />
+  </head>
+  <body>
     <div class="navbar">
-        <div class="navbar-left">
-            <img src="logo.png" alt="Logo" class="navbar-logo">
-            Body care
+      <div class="navbar-left">
+        <img src="logo.png" alt="Logo" class="navbar-logo" />
+        Body care
+      </div>
+      <div class="navbar-right">
+        <div class="navbar-text">test2</div>
+        <div class="navbar-links">
+          <a href="login.html">Login</a>
+          <a href="logout.html">Logout</a>
         </div>
-        <div class="navbar-right">
-            <div class="navbar-text">
-                test2
-            </div>
-            <div class="navbar-links">
-                <a href="login.html">Login</a>
-                <a href="logout.html">Logout</a>
-            </div>
-        </div>
-        <div class="navbar-buttons">
-            <button class="navbar-button">Button 1</button>
-            <button class="navbar-button">Button 2</button>
-        </div>
+      </div>
+      <div class="navbar-buttons">
+        <button class="navbar-button">Button 1</button>
+        <button class="navbar-button">Button 2</button>
+      </div>
     </div>
-</body>
+    <div>
+      <nav class="new-navbar">
+        <!-- New navbar content -->
+        <button class="button button1">Home</button>
+        <button class="button button2">Sales</button>
+      </nav>
+    </div>
+
+    <div class="outer-box">
+      <h2>Sales Header</h2>
+      <div class="form-container">
+        <form>
+          <table
+            style="width: 100%; max-width: 700px; border: 0"
+            cellpadding="4"
+            cellspacing="0"
+          >
+            <tr>
+              <td style="width: 100%">
+                <label for="customer">customer</label><br />
+                <input
+                  name="customer"
+                  type="text"
+                  maxlength="100"
+                  style="width: 100%; max-width: 300px"
+                />
+              </td>
+              <td style="width: 100%">
+                <label for="order catagory">order catagory</label><br />
+                <select name="order catagory">
+                  <option value="option1">option1</option>
+                  <option value="option2">option2</option>
+                  <option value="option3">option3</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 100%">
+                <label for="ordertype">Select order type*</label><br />
+                <select name="ordertype">
+                  <option value="option1">option1</option>
+                  <option value="option2">option2</option>
+                  <option value="option3">option3</option>
+                </select>
+              </td>
+              <td style="width: 100%">
+                <label for="Producttype">Select product type*</label><br />
+                <select name="Producttype">
+                  <option value="option1">option1</option>
+                  <option value="option2">option2</option>
+                  <option value="option3">option3</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <label for="Remark">Remark*:</label><br />
+                <input
+                  name="Remark"
+                  type="text"
+                  maxlength="100"
+                  style="width: 100%; max-width: 300px"
+                />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
