@@ -68,12 +68,12 @@
 
 /* CSS for form */
 .outer-box {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .form-container {
-    display: inline-block;
-    max-width: 500px;
+    /* display: inline-block;
+    max-width: 500px; */
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -120,4 +120,20 @@
     background-color: #45a049;
 }
 
+table {
+    border-collapse: collapse;
+  }
 
+  th, td {
+    padding: 4px;
+    /* border: 1px solid black; */
+    align-items: left;
+  }
+
+  .multiselect-cell:first-child {
+    width: 70%;
+  }
+
+  .multiselect-cell:last-child {
+    width: 30%;
+  }

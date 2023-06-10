@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MultiSelect Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 8px;
+      border: 1px solid black;
+    }
+
+    .multiselect-cell:first-child {
+      width: 75%;
+    }
+
+    .multiselect-cell:last-child {
+      width: 25%;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td class="multiselect-cell">
+        <select multiple style="width: 100%;">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+          <option value="option4">Option 4</option>
+        </select>
+      </td>
+      <td class="multiselect-cell">
+        <select multiple style="width: 100%;">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+          <option value="option4">Option 4</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
