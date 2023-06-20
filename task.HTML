@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Information</h1>
+    <button onclick="myFunction()">add Student info</button>
+    <div>
+        <table>
+         
+        </table>
+
+
+
+
+        <table>
+            <thead>
+                <th>Student</th>
+                <th>Roll Number</th>
+            </thead>
+            <tbody id="showdata">
+            </tbody>
+            <tr>
+                <td>
+                    <input type="text" id="name" name="name" required
+                           minlength="4" maxlength="8" size="10">
+                </td>
+                <td>
+                    <input type="text" id="roll" name="roll" required
+                           minlength="4" maxlength="8" size="10"> 
+                </td>
+            </tr>
+
+            
+        </table>
+    </div>
+
+    <script>
+        function myFunction(){
+            var name=document.getElementById("name").value;
+            var roll=document.getElementById("roll").value;
+            console.log(name);
+            console.log(roll);
+            var str='<tr>'
+               str+='<td>'+name+'</td>'
+               str+='<td>'+roll+'</td>'
+               str+='</tr>'
+               console.log(str);
+               var element=document.getElementById('showdata')
+               element.innerHTML+=str;
+
+            document.getElementById("name").value="";
+            document.getElementById("roll").value="";
+        }
+        
+    </script>
+</body>
+</html>

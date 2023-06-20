@@ -87,8 +87,94 @@
               </td>
             </tr>
           </table>
+        <div >
+            <table style="width: 100%; border: 0">
+                <thead>
+                  <th>Select item No.*</th>
+                  <th>75</th>
+                  <th>80<br/>S</th>
+                  <th>85<br/>M</th>
+                  <td>90<br/>L</td>
+                  <th>95<br/>XL</th>
+                  <th>100<br/>2XL</th>
+                  <th>105<br/>3XL</th>
+                  <th>110<br/>4XL</th>
+                  <th>115<br/>5XL</th>
+                  <th>Total</th>
+               </thead>
+               <tbody id="showdata">
+
+                <tr>
+                  <td>
+                      <input type="text" id="item0">
+                  </td>
+                  <td>
+                      <input type="text" id="item1"> 
+                  </td>
+                  <td>
+                    <input type="text" id="item2"> 
+                  </td>
+                  <td>
+                    <input type="text" id="item3"> 
+                  </td>
+                  <td>
+                    <input type="text" id="item4"> 
+                  </td>
+                  <td>
+                    <input type="text" id="item5"> 
+                  </td>
+                  <td>
+                    <input type="text" id="item6"> 
+                  </td>
+                  <td>
+                    <input type="text" id="item7"> 
+                  </td>
+                  <td>
+                    <input type="text" id="item8"> 
+                  </td>
+                  <td>
+                    <input type="text" id="item9"> 
+                  </td>
+                  <td>
+                    <input type="text" id="item10"> 
+                  </td>
+                  <td>
+                    <button onclick="myFunction()">Add to Grid</button>
+                  </td>
+              </tr>
+              </tbody>
+            </table>
+        </div>
+        
+        </form>
         </form>
       </div>
     </div>
+    <script>
+      function myFunction(){
+        var item0= document.getElementById("item0").value;
+        var item1=document.getElementById("item1").value;
+        var item2=document.getElementById("item2").value;
+        var item3=document.getElementById("item3").value;
+        var item4=document.getElementById("item4").value;
+        var item5=document.getElementById("item5").value;
+        var item6=document.getElementById("item6").value;
+        var item7=document.getElementById("item7").value;
+        var item8=document.getElementById("item8").value;
+        var item9=document.getElementById("item9").value;
+        console.log(item0);
+        console.log(item1);
+        console.log(item2);
+        console.log(item3);
+        console.log(item4);
+      console.log(item5);
+      console.log(item6);
+      console.log(item7);
+      console.log(item8);
+      console.log(item9);
+      
+      }
+    </script>
   </body>
+  
 </html>
