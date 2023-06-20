@@ -1,180 +1,167 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="test.css" />
-  </head>
-  <body>
-    <div class="navbar">
-      <div class="navbar-left">
-        <img src="logo.png" alt="Logo" class="navbar-logo" />
-        Body care
-      </div>
-      <div class="navbar-right">
-        <div class="navbar-text">test2</div>
-        <div class="navbar-links">
-          <a href="login.html">Login</a>
-          <a href="logout.html">Logout</a>
-        </div>
-      </div>
-      <div class="navbar-buttons">
-        <button class="navbar-button">Button 1</button>
-        <button class="navbar-button">Button 2</button>
-      </div>
-    </div>
-    <div>
-      <nav class="new-navbar">
-        <!-- New navbar content -->
-        <button class="button button1">Home</button>
-        <button class="button button2">Sales</button>
-      </nav>
-    </div>
 
-    <div class="outer-box">
-      <h2>Sales Header</h2>
-      <div class="form-container">
-        <form>
-          <table
-            style="width: 100%; border: 0"
-            cellpadding="0"
-            cellspacing="0"
-          >
+<head>
+  <link rel="stylesheet" type="text/css" href="test.css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-left">
+      <img src="logo.png" alt="Logo" class="navbar-logo" />
+      Body care
+    </div>
+    <div class="navbar-right">
+      <div class="navbar-text">test2</div>
+      <div class="navbar-links">
+        <a href="login.html">Login</a>
+        <a href="logout.html">Logout</a>
+      </div>
+    </div>
+    <div class="navbar-buttons">
+      <button class="navbar-button">Button 1</button>
+      <button class="navbar-button">Button 2</button>
+    </div>
+  </div>
+  <div>
+    <nav class="new-navbar">
+      <!-- New navbar content -->
+      <button class="button button1">Home</button>
+      <button class="button button2">Sales</button>
+    </nav>
+  </div>
+
+  <div class="outer-box">
+    <h2>Sales Header</h2>
+    <div class="form-container">
+        <table style="width: 100%; border: 0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="multiselect-cell">
+              <label for="customer">customer</label>
+              <input name="customer" type="text" maxlength="100" style="width: 100%; max-width: 460px" />
+            </td>
+            <td class="multiselect-cell">
+              <label for="order catagory">order catagory</label>
+              <select name="order catagory">
+                <option value="option1">option1</option>
+                <option value="option2">option2</option>
+                <option value="option3">option3</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="multiselect-cell" align="left">
+              <label for="ordertype">Select order type*</label>
+              <select name="ordertype" style="width: 100%; max-width: 200px">
+                <option value="option1">option1</option>
+                <option value="option2">option2</option>
+                <option value="option3">option3</option>
+              </select>
+            </td>
+            <td class="multiselect-cell">
+              <label for="Producttype">Select product type*</label>
+              <select name="Producttype">
+                <option value="option1">option1</option>
+                <option value="option2">option2</option>
+                <option value="option3">option3</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label for="Remark">Remark*:</label>
+              <input name="Remark" type="text" maxlength="100" style="width: 100%; max-width: 700px" />
+            </td>
+          </tr>
+        </table>
+        <div>
+          <table style="width: 100%; border: 0" cellpadding="0" cellspacing="0">
+            <thead>
+              <th>Select item No.*</th>
+              <th>75</th>
+              <th>80<br />S</th>
+              <th>85<br />M</th>
+              <td>90<br />L</td>
+              <th>95<br />XL</th>
+              <th>100<br />2XL</th>
+              <th>105<br />3XL</th>
+              <th>110<br />4XL</th>
+              <th>115<br />5XL</th>
+              <th colspan="2">Total</th>
+            </thead>
+            <tbody id="showdata">
+
+            </tbody>
             <tr>
-              <td class="multiselect-cell">
-                <label for="customer">customer</label>
-                <input
-                  name="customer"
-                  type="text"
-                  maxlength="100"
-                  style="width: 100%; max-width: 460px"
-                />
+              <td>
+                <input type="text" id="item0">
               </td>
-              <td class="multiselect-cell">
-                <label for="order catagory">order catagory</label>
-                <select name="order catagory">
-                  <option value="option1">option1</option>
-                  <option value="option2">option2</option>
-                  <option value="option3">option3</option>
-                </select>
+              <td>
+                <input type="text" id="item1">
               </td>
-            </tr>
-            <tr>
-              <td class="multiselect-cell" align="left" >
-                <label for="ordertype">Select order type*</label>
-                <select name="ordertype"  style="width: 100%; max-width: 200px">
-                  <option value="option1">option1</option>
-                  <option value="option2">option2</option>
-                  <option value="option3">option3</option>
-                </select>
+              <td>
+                <input type="text" id="item2">
               </td>
-              <td class="multiselect-cell">
-                <label for="Producttype">Select product type*</label>
-                <select name="Producttype">
-                  <option value="option1">option1</option>
-                  <option value="option2">option2</option>
-                  <option value="option3">option3</option>
-                </select>
+              <td>
+                <input type="text" id="item3">
               </td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <label for="Remark">Remark*:</label>
-                <input
-                  name="Remark"
-                  type="text"
-                  maxlength="100"
-                  style="width: 100%; max-width: 700px"
-                />
+              <td>
+                <input type="text" id="item4">
+              </td>
+              <td>
+                <input type="text" id="item5">
+              </td>
+              <td>
+                <input type="text" id="item6">
+              </td>
+              <td>
+                <input type="text" id="item7">
+              </td>
+              <td>
+                <input type="text" id="item8">
+              </td>
+              <td>
+                <input type="text" id="item9">
+              </td>
+              <td>
+                <input type="text" id="item10">
+              </td>
+              <td>
+                <button onclick="myFunction()">Add to Grid</button>
               </td>
             </tr>
           </table>
-        <div >
-            <table style="width: 100%; border: 0">
-                <thead>
-                  <th>Select item No.*</th>
-                  <th>75</th>
-                  <th>80<br/>S</th>
-                  <th>85<br/>M</th>
-                  <td>90<br/>L</td>
-                  <th>95<br/>XL</th>
-                  <th>100<br/>2XL</th>
-                  <th>105<br/>3XL</th>
-                  <th>110<br/>4XL</th>
-                  <th>115<br/>5XL</th>
-                  <th>Total</th>
-               </thead>
-               <tbody id="showdata">
-
-                <tr>
-                  <td>
-                      <input type="text" id="item0">
-                  </td>
-                  <td>
-                      <input type="text" id="item1"> 
-                  </td>
-                  <td>
-                    <input type="text" id="item2"> 
-                  </td>
-                  <td>
-                    <input type="text" id="item3"> 
-                  </td>
-                  <td>
-                    <input type="text" id="item4"> 
-                  </td>
-                  <td>
-                    <input type="text" id="item5"> 
-                  </td>
-                  <td>
-                    <input type="text" id="item6"> 
-                  </td>
-                  <td>
-                    <input type="text" id="item7"> 
-                  </td>
-                  <td>
-                    <input type="text" id="item8"> 
-                  </td>
-                  <td>
-                    <input type="text" id="item9"> 
-                  </td>
-                  <td>
-                    <input type="text" id="item10"> 
-                  </td>
-                  <td>
-                    <button onclick="myFunction()">Add to Grid</button>
-                  </td>
-              </tr>
-              </tbody>
-            </table>
         </div>
-        
-        </form>
-        </form>
-      </div>
+
     </div>
-    <script>
-      function myFunction(){
-        var item0= document.getElementById("item0").value;
-        var item1=document.getElementById("item1").value;
-        var item2=document.getElementById("item2").value;
-        var item3=document.getElementById("item3").value;
-        var item4=document.getElementById("item4").value;
-        var item5=document.getElementById("item5").value;
-        var item6=document.getElementById("item6").value;
-        var item7=document.getElementById("item7").value;
-        var item8=document.getElementById("item8").value;
-        var item9=document.getElementById("item9").value;
-        console.log(item0);
-        console.log(item1);
-        console.log(item2);
-        console.log(item3);
-        console.log(item4);
+  </div>
+  <script>
+    function myFunction() {
+      var item0 = document.getElementById("item0").value;
+      var item1 = document.getElementById("item1").value;
+      var item2 = document.getElementById("item2").value;
+      var item3 = document.getElementById("item3").value;
+      var item4 = document.getElementById("item4").value;
+      var item5 = document.getElementById("item5").value;
+      var item6 = document.getElementById("item6").value;
+      var item7 = document.getElementById("item7").value;
+      var item8 = document.getElementById("item8").value;
+      var item9 = document.getElementById("item9").value;
+      var item10 = document.getElementById("item10").value;
+      console.log(item0);
+      console.log(item1);
+      console.log(item2);
+      console.log(item3);
+      console.log(item4);
       console.log(item5);
       console.log(item6);
       console.log(item7);
       console.log(item8);
       console.log(item9);
-      
-      }
-    </script>
-  </body>
-  
+      console.log(item10);
+
+    }
+  </script>
+</body>
+
 </html>
