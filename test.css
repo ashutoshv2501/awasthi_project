@@ -67,9 +67,7 @@
 
 
 /* CSS for form */
-.outer-box {
-    /* text-align: center; */
-}
+
 
 .form-container {
     /* display: inline-block;
@@ -126,7 +124,7 @@ table {
 
   th, td {
     padding: 4px;
-     border: 1px solid black; 
+    border: 1px solid black; 
     align-items: left;
   }
 
@@ -137,3 +135,17 @@ table {
   .multiselect-cell:last-child {
     width: 30%;
   }
+
+  .table-container {
+    width: 108%; /* adjust the width as needed */
+    /* overflow-x: auto; */
+  }
+  
+  .table-container table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .table-container table tr td input{
+    width:90%;
+    }
